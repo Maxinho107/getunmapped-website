@@ -34,32 +34,18 @@ h1 { margin: 6px 0 12px; font-size: clamp(30px, 7.4vw, 50px); line-height: 1; }
 .fein { font-size: 14px; opacity: .75; margin-top: 8px !important; }
 
 .karte-box { position: relative; margin: 22px 0 0; background: var(--pergament); border-radius: 20px; }
-#karte { display: block; width: 100%; height: auto; aspect-ratio: 1000 / 860; touch-action: none; cursor: grab; user-select: none; -webkit-user-select: none; }
-#karte.zieht { cursor: grabbing; }
-#karte .grenze-f { fill: var(--nebel); }
-#karte .grenze-l { fill: none; stroke: var(--eisen); stroke-width: 3; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
-#karte .w-ort, #karte .w-abo { fill: var(--offen); stroke: var(--kante); stroke-width: .6; vector-effect: non-scaling-stroke; }
-#karte .w-neu { fill: var(--gold); stroke: var(--kante); stroke-width: .6; vector-effect: non-scaling-stroke; }
-#karte .weg { fill: none; stroke: var(--indigo); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
-#karte .ort { fill: var(--eisen); cursor: pointer; }
-#karte .ort.neu { fill: var(--indigo); stroke: var(--pergament); stroke-width: 2; vector-effect: non-scaling-stroke; }
-#karte .ort.geplant { fill: var(--elfenbein); stroke: var(--eisen); stroke-width: 2; vector-effect: non-scaling-stroke; }
-#karte .ort.aktiv { fill: var(--gold); stroke: var(--eisen); stroke-width: 2.5; vector-effect: non-scaling-stroke; }
-#karte .treffer { fill: transparent; cursor: pointer; }
-#karte .schild rect { fill: var(--indigo); stroke: var(--pergament); stroke-width: 2; vector-effect: non-scaling-stroke; }
-#karte .schild text { fill: var(--pergament); font-weight: 900; text-transform: uppercase; }
-
-.zoom { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 6px; }
-.zoom button { width: 40px; height: 40px; border-radius: 10px; border: 2px solid var(--eisen); background: var(--elfenbein); color: var(--eisen); font: 900 22px/1 "Inter", sans-serif; cursor: pointer; }
+#karte { width: 100%; height: min(72vh, 620px); border-radius: 18px; overflow: hidden; border: 3px solid var(--eisen); background: var(--nebel); }
+#karte .maplibregl-ctrl-attrib { font: 600 11px/1.4 "Inter", sans-serif; }
 .legende { display: flex; flex-wrap: wrap; gap: 6px 16px; justify-content: center; font-size: 13px; margin-top: 8px; }
 .legende i { display: inline-block; width: 14px; height: 14px; border-radius: 3px; margin-right: 6px; vertical-align: -2px; border: 1px solid var(--kante); }
 .legende .l-offen { background: var(--offen); }
 .legende .l-nebel { background: var(--nebel); }
 .legende .l-neu { background: var(--gold); }
 .legende .l-weg { background: var(--indigo); height: 4px; vertical-align: 3px; border: 0; }
+.legende .l-offen { background: repeating-linear-gradient(45deg, #EDE6D6 0 3px, #FCF8F0 3px 6px); }
 .tipp { text-align: center; font-size: 13px; opacity: .6; margin: 4px 0 0; }
 
-.info { position: absolute; left: 10px; bottom: 64px; max-width: 320px; width: calc(100% - 20px); background: var(--elfenbein); border: 3px solid var(--eisen); border-radius: 16px; padding: 12px 14px 14px; box-shadow: 0 6px 20px rgba(43, 42, 51, .18); }
+.info { position: absolute; left: 12px; top: 12px; z-index: 3; max-width: 320px; width: calc(100% - 20px); background: var(--elfenbein); border: 3px solid var(--eisen); border-radius: 16px; padding: 12px 14px 14px; box-shadow: 0 6px 20px rgba(43, 42, 51, .18); }
 .info p { margin: 0; }
 .info-name { font-weight: 900; text-transform: uppercase; font-size: 20px; padding-right: 26px; }
 .info-text { font-size: 14px; margin: 4px 0 10px !important; }
