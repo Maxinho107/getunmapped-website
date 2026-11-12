@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wir decken unsere Heimat auf – Spielstand | Unmapped</title>
+<meta name="description" content="Der aktuelle Spielstand von „Wir decken unsere Heimat auf“: Jede Folge deckt einen Ort in NRW auf, jedes Abo eine Wabe auf den Wegen dazwischen.">
+<meta property="og:title" content="Wir decken unsere Heimat auf – Spielstand">
+<meta property="og:description" content="Jede Folge ein Ort, jedes Abo eine Wabe. Schau, wie weit NRW schon aufgedeckt ist.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://getunmapped.de/heimat/">
+<meta name="theme-color" content="#2B2A33">
+<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="lib/maplibre-gl.css">
+<link rel="stylesheet" href="heimat.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a href="../"><img src="../img/unmapped_logo_on_dark.svg" alt="Unmapped" width="70" height="49"></a>
+    <nav><a href="../">Die App</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="kopf">
+    <p class="z1">Wir decken</p>
+    <h1><span class="pille indigo">unsere Heimat auf</span></h1>
+    <p><span class="pille eisen klein" id="kapitel">Kapitel 1 · NRW</span></p>
+  </section>
+
+  <section class="status" aria-live="polite">
+    <p class="zeile" id="zeile">Spielstand wird geladen …</p>
+    <p><span class="pille gold gross" id="prozent">… %</span></p>
+    <p class="fein" id="stand"></p>
+  </section>
+
+  <section class="karte-box">
+    <div id="karte" role="region" aria-label="Karte von NRW: aufgedeckte Waben, Wege und Orte der Reihe"></div>
+    <div class="info" id="info" hidden>
+      <button type="button" class="zu" id="info-zu" aria-label="Schließen">×</button>
+      <p class="info-name" id="info-name"></p>
+      <p class="info-text" id="info-text"></p>
+      <a class="btn" id="info-link" href="#">Folge auf YouTube suchen</a>
+    </div>
+    <div class="legende">
+      <span><i class="l-offen"></i>aufgedeckt</span>
+      <span><i class="l-nebel"></i>unter Nebel</span>
+      <span><i class="l-weg"></i>Weg zwischen den Orten</span>
+      <span id="leg-neu" hidden><i class="l-neu"></i>neu diese Woche</span>
+    </div>
+    <p class="tipp">Tippe auf einen Ort. Mit zwei Fingern oder dem Mausrad zoomen.</p>
+  </section>
+
+  <section class="regeln">
+    <h2>So funktioniert’s</h2>
+    <div class="karten">
+      <div><b>1 Folge = 1 Ort</b><p>Jeder Ort aus unseren Videos wird auf der Karte aufgedeckt, mit einem Ring Waben drumherum.</p></div>
+      <div><b>1 Abo = 1 Wabe</b><p>Jedes Abo auf YouTube oder Instagram deckt eine Wabe auf. Erst auf den echten Wegen zwischen den Orten, dann ringsherum.</p></div>
+      <div><b>Jeden Sonntag</b><p>gibt’s den neuen Spielstand als Folge. Diese Karte wird am selben Tag aktualisiert.</p></div>
+    </div>
+    <div class="aktion">
+      <a class="btn" href="https://www.youtube.com/@Getunmapped">Auf YouTube abonnieren</a>
+      <a class="btn hell" href="https://www.instagram.com/getunmapped/">Auf Instagram folgen</a>
+    </div>
+    <p class="app">Selbst entdecken? <a href="../#warteliste">Trag dich für die Unmapped-App ein</a>, sie deckt deine eigene Karte auf, Wabe für Wabe.</p>
+  </section>
+
+  <p class="quellen">Karte © OpenStreetMap-Mitwirkende (ODbL), Kartenstil Protomaps · Grenzen © GeoBasis-DE / BKG (dl-de/by-2-0) · Wege berechnet aus OpenStreetMap · Kartenansicht mit MapLibre</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Unmapped</span>
+    <nav>
+      <a href="https://www.youtube.com/@Getunmapped">YouTube</a>
+      <a href="https://www.instagram.com/getunmapped/">Instagram</a>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="lib/maplibre-gl.js"></script>
+<script src="heimat.js"></script>
+</body>
+</html>
