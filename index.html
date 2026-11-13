@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Unmapped – Die Welt liegt unter Wolken</title>
-<meta name="description" content="Unmapped ist die Entdecker-Karte für dein Handy. Überall, wo du wirklich warst, verschwinden die Wolken. Kein Konto, kein Server, keine Werbung. Kommt bald für iPhone und Android.">
+<title>Unmapped – Wir decken unsere Heimat auf</title>
+<meta name="description" content="Unmapped deckt die Karte auf, Wabe für Wabe: in unserer Videoreihe „Wir decken unsere Heimat auf“ live auf der Heimat-Karte und bald mit der App für iPhone und Android.">
 <meta property="og:title" content="Unmapped – Die Welt liegt unter Wolken">
 <meta property="og:description" content="Die Entdecker-Karte für dein Handy. Deck die Welt auf, Wabe für Wabe.">
 <meta property="og:type" content="website">
@@ -15,23 +15,42 @@
 </head>
 <body>
 
-<header class="top">
-  <div class="wrap">
-    <a href="./"><img src="img/unmapped_logo_on_dark.svg" alt="Unmapped" width="80" height="56"></a>
-    <nav><a href="heimat/">Heimat-Karte</a> <a href="#warteliste">Warteliste</a></nav>
-  </div>
-</header>
+<header class="top"><div class="wrap"><a class="logo" href="./"><img src="img/unmapped_logo_on_dark.svg" alt="Unmapped – Startseite" width="80" height="56"></a><button type="button" class="menu-knopf" aria-expanded="false" aria-controls="hauptnav"><span></span>Menü</button><nav id="hauptnav" class="hauptnav" aria-label="Hauptnavigation"><a href="heimat/">Heimat-Karte</a><a href="./#app">Die App</a><a href="./#videos">Videos</a><a href="./#warteliste">Warteliste</a><span class="social"><a href="https://www.youtube.com/@Getunmapped" aria-label="YouTube"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a><a href="https://www.instagram.com/getunmapped/" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg></a></span></nav></div></header>
 
 <main>
-  <div class="hero">
+  <div class="hero heimat-hero">
     <div class="wrap">
       <div>
-        <h1>Die Welt liegt unter Wolken.</h1>
-        <p class="claim">Deck sie auf, Wabe für Wabe.</p>
-        <p class="lead">Unmapped ist die Entdecker-Karte für dein Handy. Überall, wo du wirklich warst, verschwinden die Wolken: zu Fuß, mit dem Rad, im Auto oder im Zug.</p>
+        <p class="eyebrow">Unsere Videoreihe · Kapitel 1 · NRW</p>
+        <h1>Wir decken unsere Heimat auf.</h1>
+        <p class="lead">Jede Folge deckt einen Ort in NRW auf, jedes Abo eine Wabe auf den Wegen dazwischen. Schau nach, wie weit wir schon sind.</p>
+        <ul class="zahlen" aria-live="polite">
+          <li><b id="h-prozent">31,2 %</b><span>aufgedeckt</span></li>
+          <li><b id="h-orte">41</b><span>Orte</span></li>
+          <li><b id="h-abos">2.109</b><span>Abos</span></li>
+        </ul>
         <div class="actions">
-          <a class="btn" href="#warteliste">Beim Start Bescheid bekommen</a>
+          <a class="btn" href="heimat/">Zur Heimat-Karte</a>
+          <a class="btn ghost" href="https://www.youtube.com/@Getunmapped?sub_confirmation=1">Abonnieren = 1 Wabe</a>
         </div>
+        <p class="soon" id="h-stand">Jeden Sonntag neuer Spielstand.</p>
+      </div>
+      <a class="vorschau" href="heimat/" aria-label="Zur Heimat-Karte"><img src="heimat/vorschau.svg" alt="Kartenvorschau: aufgedeckte Waben, Wege und Orte in NRW" width="600" height="520"></a>
+    </div>
+  </div>
+
+  <section id="app">
+    <div class="wrap app-grid">
+      <div>
+        <p class="eyebrow">Die App</p>
+        <h2>Die App, die deine Karte aufdeckt.</h2>
+        <p class="claim">Die Welt liegt unter Wolken. Deck sie auf, Wabe für Wabe.</p>
+        <p class="lead">Unmapped ist die Entdecker-Karte für dein Handy. Überall, wo du wirklich warst, verschwinden die Wolken: zu Fuß, mit dem Rad, im Auto oder im Zug.</p>
+        <ul class="facts">
+          <li>Kein Konto</li>
+          <li>Deine Wege bleiben auf deinem Handy</li>
+          <li>Keine Werbung</li>
+        </ul>
         <p class="soon">Kommt bald für iPhone und Android.</p>
       </div>
       <div>
@@ -423,42 +442,29 @@
         <p class="caption">Illustration. Bilder aus der App folgen.</p>
       </div>
     </div>
-  </div>
-
-  <section>
     <div class="wrap">
-      <h2>Unterwegs sein. Mehr nicht.</h2>
       <div class="steps">
-        <div class="step">
-          <div class="num">01</div>
-          <h3>Losgehen</h3>
-          <p>Die App zeichnet von allein auf, ob du wanderst, radelst, fährst oder Zug fährst. Du musst nichts starten.</p>
-        </div>
-        <div class="step">
-          <div class="num">02</div>
-          <h3>Wolken lichten sich</h3>
-          <p>Wo du wirklich warst, wird die Karte sichtbar, Wabe für Wabe. Aus deinen Wegen werden Reisen.</p>
-        </div>
-        <div class="step">
-          <div class="num">03</div>
-          <h3>Orte entdecken</h3>
-          <p>Unmapped zeigt dir Burgen, Gipfel und Seen entlang deiner Strecke, auch die, an denen du einfach vorbeigefahren bist.</p>
-        </div>
+        <div class="step"><div class="num">01</div><h3>Losgehen</h3><p>Die App zeichnet von allein auf, ob du wanderst, radelst, fährst oder Zug fährst. Du musst nichts starten.</p></div>
+        <div class="step"><div class="num">02</div><h3>Wolken lichten sich</h3><p>Wo du wirklich warst, wird die Karte sichtbar, Wabe für Wabe. Aus deinen Wegen werden Reisen.</p></div>
+        <div class="step"><div class="num">03</div><h3>Orte entdecken</h3><p>Unmapped zeigt dir Burgen, Gipfel und Seen entlang deiner Strecke, auch die, an denen du einfach vorbeigefahren bist.</p></div>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="wrap privacy">
-      <div>
-        <h2>Deine Karte gehört dir.</h2>
-        <p>Wo du warst, sagt viel über dich. Deshalb bleiben deine Wege auf deinem Handy und nirgendwo sonst.</p>
+  <section id="videos">
+    <div class="wrap">
+      <p class="eyebrow">Videos</p>
+      <h2>Jeden Tag ein Stück Heimat.</h2>
+      <p class="lead">Kurze Videos über alte Karten, vergessene Orte und unsere Heimat, jeden Tag um 17 Uhr auf YouTube und Instagram.</p>
+      <div class="kacheln">
+        <a class="kachel" href="https://www.youtube.com/@Getunmapped/shorts"><span class="tag indigo">Mo · Di · Do · Fr · Sa</span><h3>Alte Karte, neue Welt</h3><p>Wie sah dein Ort vor 200 Jahren aus? Die alte Karte gleitet über das Heute.</p></a>
+        <a class="kachel" href="https://www.youtube.com/@Getunmapped/shorts"><span class="tag gold">Mittwoch</span><h3>Orts-Quiz</h3><p>Nur die alte Karte. Erkennst du die Stadt, bevor wir sie auflösen?</p></a>
+        <a class="kachel" href="heimat/"><span class="tag hell">Sonntag</span><h3>Spielstand</h3><p>Wie weit ist NRW aufgedeckt? Neue Orte und neue Waben der Woche, live auf der Heimat-Karte.</p></a>
       </div>
-      <ul class="facts">
-        <li>Kein Konto</li>
-        <li>Kein Server für deine Wege</li>
-        <li>Keine Werbung</li>
-      </ul>
+      <div class="actions mitte">
+        <a class="btn" href="https://www.youtube.com/@Getunmapped?sub_confirmation=1">Auf YouTube abonnieren</a>
+        <a class="btn ghost" href="https://www.instagram.com/getunmapped/">Auf Instagram folgen</a>
+      </div>
     </div>
   </section>
 
@@ -472,24 +478,14 @@
         <a class="btn ghost" data-link="appStore" hidden href="#">Im App Store vorbestellen</a>
         <a class="btn" data-fallback hidden href="https://www.youtube.com/@Getunmapped?sub_confirmation=1">Auf YouTube abonnieren</a>
       </div>
-      <p class="soon">Bis dahin: kurze Videos über alte Karten und vergessene Orte auf <a href="https://www.youtube.com/@Getunmapped">YouTube</a> und <a href="https://www.instagram.com/getunmapped/">Instagram</a>.</p>
     </div>
   </section>
 </main>
 
-<footer>
-  <div class="wrap">
-    <span>© 2026 Unmapped</span>
-    <nav>
-      <a href="https://www.youtube.com/@Getunmapped">YouTube</a>
-      <a href="https://www.instagram.com/getunmapped/">Instagram</a>
-      <a href="heimat/">Heimat-Karte</a>
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-    </nav>
-  </div>
-</footer>
+<footer><div class="wrap"><span>© 2026 Unmapped</span><nav><a href="heimat/">Heimat-Karte</a><a href="https://www.youtube.com/@Getunmapped">YouTube</a><a href="https://www.instagram.com/getunmapped/">Instagram</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav></div></footer>
 
 <script src="links.js"></script>
+<script src="nav.js"></script>
+<script src="startseite.js"></script>
 </body>
 </html>
